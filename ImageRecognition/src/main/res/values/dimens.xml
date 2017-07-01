@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="view_cameraAperture_width">300dp</dimen>
+    <dimen name="view_cameraAperture_height">250dp</dimen>
+    <dimen name="view_cameraAperture_width_idcard">282.48dp</dimen>
+    <dimen name="view_cameraAperture_height_idcard">178.2dp</dimen>
+    <dimen name="view_cameraAperture_width_bankcard">282.48dp</dimen>
+    <dimen name="view_cameraAperture_height_bankcard">178.134dp</dimen>
+    </resources>

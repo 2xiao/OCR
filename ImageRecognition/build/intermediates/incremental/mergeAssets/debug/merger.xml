@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="19.1.0"><source path="/Users/X/Work/AndroidStudioProjects/XApplication/ImageRecognition/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/assets"/></dataSet><dataSet config="main"><source path="/Users/X/Work/AndroidStudioProjects/XApplication/ImageRecognition/src/main/assets"/></dataSet><dataSet config="debug"><source path="/Users/X/Work/AndroidStudioProjects/XApplication/ImageRecognition/src/debug/assets"/></dataSet></merger>

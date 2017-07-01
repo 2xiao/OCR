@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 拍照界面 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 预览层 -->
+
+    <SurfaceView
+        android:id="@+id/surface_takeIDCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 取景框 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/translucent_balack" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/translucent_balack" />
+
+                <FrameLayout
+                    android:id="@+id/view_takeBusinessCard_cameraAperture"
+                    android:layout_width="@dimen/view_cameraAperture_width_idcard"
+                    android:layout_height="@dimen/view_cameraAperture_height_idcard"
+                    android:background="@drawable/camera_aperture" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/image_takeBusinessCard_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/translucent_balack" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/translucent_balack" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 取景、功能层 -->
+
+    <Button
+        android:id="@+id/button_takeBusinessCard_viewHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:text="拍摄历史"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button_takeBusinessCard_flashMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_flash_off"
+        android:drawablePadding="4dp"
+        android:text="关闭"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <!-- 拍照操作栏 -->
+    
+    <TextView
+        android:id = "@+id/tv_result"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:textIsSelectable="true" 
+        android:scrollbars="vertical"
+        android:visibility="gone"/>
+    
+    <!--文本显示区  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/translucent_balack"
+        android:gravity="center"
+        android:padding="8dp" >
+
+        <Button
+            android:id="@+id/button_takeBusinessCard_remake"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="重拍"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/button_takeBusinessCard_shutter"
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:src="@drawable/ic_camera_theme"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_takeBusinessCard_use"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="使用"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</FrameLayout>
